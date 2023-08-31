@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="Application.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            height: 105px;
+            width: 1195px;
+        }
+        .auto-style3 {
+            height: 81px;
+            width: 1195px;
+        }
+        .auto-style4 {
+            height: 93px;
+            width: 1195px;
+        }
+        .auto-style5 {
+            width: 1780px;
+            height: 163px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">
+                    <img alt="" class="auto-style5" src="Content/photo-1530982011887-3cc11cc85693%20(1).jpg" /><asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text ="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/AboutUs Page.aspx" Text ="About " Value="About"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ContactUs.aspx" Text  ="Contact " Value="Contact "></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Login.aspx" Text ="Login" Value="Login"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle HorizontalPadding="50px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
